@@ -1,0 +1,9 @@
+set imap_user="twonkytom"
+set smtp_url="smtp://twonkytom@smtp.web.de"
+set folder="imaps://imap.web.de"
+set spoolfile="+INBOX"
+
+#color scheme
+#source .mutt/mutt-colors-solarized-dark-16.muttrc
+#source .mutt/colors01
+source .mutt/colors02

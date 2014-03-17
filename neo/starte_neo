@@ -1,0 +1,4 @@
+PATH=/home/tom/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/home/tom/neo
+export PATH
+echo "Die Belegung wird nun auf Neo geändert…"
+asdf
