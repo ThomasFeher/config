@@ -1,0 +1,2 @@
+add all untracked files to gitignore
+    vcsh config status --porcelain | grep '^??' | cut -c4- >> .gitignore.d/config
