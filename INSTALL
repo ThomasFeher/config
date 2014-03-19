@@ -1,2 +1,10 @@
+get vcsh
+    git clone https://github.com/RichiH/vcsh.git
+make symlink to dir in $PATH
+    ln -s …
+make shure ssh key is registered at github
+   …
+clone config
+    vcsh clone git@github.com:ThomasFeher/config.git config
 add all untracked files to gitignore
     vcsh config status --porcelain | grep '^??' | cut -c4- >> .gitignore.d/config
