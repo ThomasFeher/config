@@ -286,11 +286,11 @@ exec xsetbg $(find ~/Bilder/wallpapers/ -maxdepth 1 -type f | shuf -n1)
 # autostart
 #exec /usr/lib/polkit-gnome-authentication-agent-1
 exec /usr/lib/lxpolkit/lxpolkit
-exec --no-startup-id i3-msg 'workspace number 9; exec weechat'
-exec --no-startup-id i3-msg 'workspace number 5; exec dolphin'
-exec --no-startup-id i3-msg 'workspace number 1; exec thunderbird'
+exec --no-startup-id i3-msg 'workspace number 1; layout tabbed; exec thunderbird; exec jitsi; exec taskcoach.sh'
 exec --no-startup-id i3-msg 'workspace number 2; exec firefox'
 exec --no-startup-id i3-msg 'workspace number 3; exec urxvt -e screen'
+exec --no-startup-id i3-msg 'workspace number 5; exec dolphin'
+exec --no-startup-id i3-msg 'workspace number 9; layout tabbed; exec urxvt -e weechat-curses; exec pigdin'
 exec kopete
 exec dropbox start
 #exec --no-startup-id nm-applet #network manager
