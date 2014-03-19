@@ -62,6 +62,7 @@
 # mh       - move container to workspace 7
 # mg       - move container to workspace 8
 # mf       - move container to workspace 9
+# md       - move workspace to display right
 #
 # return,esc - back to default mode
 
@@ -227,7 +228,7 @@ bindsym Mod1+g mode "switch"
 
 # moving mode like in screen
 mode "move" {
-	#move with keys corresponding to neo layout keypad on layer 4
+	#move to workspaces with keys corresponding to neo layout keypad on layer 4
 	bindsym "space"  move container to workspace number 0;mode "default"
 	bindsym m move container to workspace number 1;mode "default"
 	bindsym "comma" move container to workspace number 2;mode "default"
@@ -245,6 +246,9 @@ mode "move" {
 	bindsym a move down; mode "default"
 	bindsym l move up; mode "default"
 	bindsym e move right; mode "default"
+
+	# move to next display
+	bindsym d move workspace to output right; mode "default"
 
 	# back to normal: Enter or Escape
 	bindsym Return mode "default"
