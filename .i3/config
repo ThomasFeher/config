@@ -281,6 +281,9 @@ colors {
 	separator  #444444
 	statusline $darkgrey
 }
+
+	# show tray on primary monitor
+	tray_output primary
 }
 
 # switch off laptop monitor if external monitor is connected

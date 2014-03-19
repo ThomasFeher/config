@@ -271,7 +271,10 @@ bar {
 	status_command i3status
 	#status_command i3status | my_i3status.py
 
-		# $i3-theme-bar
+	# $i3-theme-bar
+
+	# show tray on primary monitor
+	tray_output primary
 }
 
 # switch off laptop monitor if external monitor is connected
