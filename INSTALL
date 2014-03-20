@@ -8,3 +8,12 @@ clone config
     vcsh clone git@github.com:ThomasFeher/config.git config
 add all untracked files to gitignore
     vcsh config status --porcelain | grep '^??' | cut -c4- >> .gitignore.d/config
+
+* installing software
+urxvt
+    zypper in rxvt-unicode
+weechat
+    zypper in weechat weechat-python weechat-perl
+otr für weechat
+    zypper in python-pip python3-pip python-devel python3-devel
+    pip install python-potr
