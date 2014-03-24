@@ -82,6 +82,7 @@
 .virt-manager/
 .weechat/logs/
 .weechat/weechat.log
+.weechat/otr/
 .wine/
 .xim.template
 .xinitrc.template
