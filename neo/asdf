@@ -22,11 +22,11 @@ fi
 # Default values
 NEO_XKBMAP=${NEO_XKBMAP:-de}
 NEO_XKBVARIANT=${NEO_XKBVARIANT:-neo}
-#NEO_XMODMAP=${NEO_XMODMAP:-/home/tom/neo/neo_de.xmodmap}
-NEO_XMODMAP=${NEO_XMODMAP:-/home/tom/neo/trulyneo.xmodmap}
-NEO_XMODMAP_XPROG=${NEO_XMODMAP_XPROG:-/home/tom/neo/neo_de_x-prog.xmodmap}
-NEO_XMODMAP_ALTERNATIVE=${NEO_XMODMAP_ALTERNATIVE:-/home/tom/neo/neo_de_alternative.xmodmap}
-NEO_CONSOLE_KEYMAP=${NEO_CONSOLE_KEYMAP:-/home/tom/neo/neo.map}
+#NEO_XMODMAP=${NEO_XMODMAP:-$HOME/neo/neo_de.xmodmap}
+NEO_XMODMAP=${NEO_XMODMAP:-$HOME/neo/trulyneo.xmodmap}
+NEO_XMODMAP_XPROG=${NEO_XMODMAP_XPROG:-$HOME/neo/neo_de_x-prog.xmodmap}
+NEO_XMODMAP_ALTERNATIVE=${NEO_XMODMAP_ALTERNATIVE:-$HOME/neo/neo_de_alternative.xmodmap}
+NEO_CONSOLE_KEYMAP=${NEO_CONSOLE_KEYMAP:-$HOME/neo/neo.map}
 KEYSYMDEF=${KEYSYMDEF:-/usr/include/X11/keysymdef.h}
 
 die() {
