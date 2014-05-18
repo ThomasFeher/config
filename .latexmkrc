@@ -1,1 +1,1 @@
-$clean_ext = 'run.xml bbl bcf sta'
+$clean_ext = 'run.xml bbl bcf sta';
