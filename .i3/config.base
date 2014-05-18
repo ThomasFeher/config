@@ -277,31 +277,10 @@ bar {
 	tray_output primary
 }
 
-# switch off laptop monitor if external monitor is connected
-exec ~/bin/xrandrStartup.pl
-
-# load background image
-exec xsetbg $(find ~/Bilder/wallpapers/ -maxdepth 1 -type f | shuf -n1)
-
-# autostart
-#exec /usr/lib/polkit-gnome-authentication-agent-1
-exec /usr/lib/lxpolkit/lxpolkit
-exec --no-startup-id i3-msg 'workspace number 1; layout tabbed; exec thunderbird; exec jitsi; exec taskcoach.sh'
-exec --no-startup-id i3-msg 'workspace number 2; exec firefox'
-exec --no-startup-id i3-msg 'workspace number 3; exec urxvt -e screen'
-exec --no-startup-id i3-msg 'workspace number 5; exec dolphin'
-exec --no-startup-id i3-msg 'workspace number 9; layout tabbed; exec urxvt -e weechat-curses; exec pigdin'
-exec kopete
-exec dropbox start
-#exec --no-startup-id nm-applet #network manager
-
 #sound control
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
-
-# program start bindings
-#bindsym Mod1+m exec thunderbird
 
 # colors
 # $i3-theme-window
@@ -319,5 +298,5 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
 #######################################################################
 #exec i3-config-wizard
 
-#open first workspace
-exec i3-msg 'workspace number 1'
+# autostart
+exec $HOME/.i3/autostart.sh
