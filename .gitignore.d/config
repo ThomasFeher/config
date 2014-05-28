@@ -48,11 +48,13 @@
 .fltk/
 .gimp-2.8/
 .gitignore.d/config.bak
+.gitignore.d/vic
 .gitk
 .gnupg/
 .gnuplot_history
 .gstreamer-0.10/
 .gtkrc-2.0
+.i3/autostart.sh
 .isomaster
 .java/
 .kde4/
@@ -158,6 +160,7 @@ uzbl/
 .dmenu_cache
 .fontconfig/
 .forward
+.freemind/
 .gconf/
 .gnuplot
 .gtkrc-2.0-kde4
