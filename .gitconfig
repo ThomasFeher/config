@@ -1,6 +1,3 @@
-[user]
-	name = Thomas Fehér
-	email = thomasfeher@web.de
 [merge]
 	tool = vimdiff
 [push]
@@ -17,3 +14,5 @@
 	ui = true
 [core]
 	pager = less -FRSX
+[include]
+	path = .gitconfig_individual

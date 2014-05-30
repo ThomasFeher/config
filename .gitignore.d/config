@@ -162,6 +162,7 @@ uzbl/
 .forward
 .freemind/
 .gconf/
+.gitconfig_individual
 .gnuplot
 .gtkrc-2.0-kde4
 .jitsi/
