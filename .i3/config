@@ -159,7 +159,7 @@ bindsym Mod1+Shift+9 move container to workspace number 9
 bindsym Mod1+Shift+0 move container to workspace number 10
 
 # reload the configuration file
-bindsym Mod1+Shift+c exec j4-make-config tango; reload
+bindsym Mod1+Shift+c exec j4-make-config; reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym Mod1+Shift+w restart
 # exit i3 (logs you out of your X session)
@@ -167,7 +167,7 @@ bindsym Mod1+Shift+o exit
 
 mode "re… -_L_oad config -start _I_3 -_S_ize window" {
 		# reload the configuration file
-		bindsym l exec j4-make-config tango; reload; mode "default"
+		bindsym l exec j4-make-config; reload; mode "default"
 		# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 		bindsym i restart; mode "default"
 		bindsym s mode resize
@@ -352,3 +352,5 @@ client.urgent           $lightred $red $white $lightred
 
 # autostart
 exec $HOME/.i3/autostart.sh
+
+# vim: ft=i3:
