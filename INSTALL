@@ -7,7 +7,7 @@ make shure ssh key is registered at github
 clone config
     vcsh clone git@github.com:ThomasFeher/config.git config
 add all untracked files to gitignore
-    vcsh config status --porcelain | grep '^??' | cut -c4- >> .gitignore.d/config
+	vcsh write-gitignore config
 
 * installing software
 urxvt
@@ -17,3 +17,5 @@ weechat
 otr für weechat
     zypper in python-pip python3-pip python-devel python3-devel
     pip install python-potr
+i3wm
+	zypper in i3 i3status
