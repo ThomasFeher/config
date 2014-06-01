@@ -5,3 +5,7 @@
 startup_message off
 bell_msg 'Bell in Window %n ^G'
 defscrollback 50000
+hardstatus alwayslastline
+#hardstatus string '%{= bW}%-Lw%{= rW}%50>%n%f* %t%{= bW}%+Lw%< %{= bd}%-='
+#hardstatus string '%{= k.}%{.b}[%{.g}%H%{.b}][%= %{.B}%?%-Lw%?%{.r}(%{+b .C}%n*%f %t%?(%u)%?%{-b .r})%{.B}%?%+Lw%?%?%= %{.b}][%{.y}%l%{.b}][%{.c}%m/%d %c%{.b}]%{= dd}'
+hardstatus string '%{= k.}%{.b}%= [%{.B}%?%-Lw%?%{.r}(%{+b .C}%n*%f %t%?(%u)%?%{-b .r})%{.B}%?%+Lw%?%{= .b}]%= %{= dd}'
