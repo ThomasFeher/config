@@ -200,6 +200,10 @@ mode "resize" {
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
+		bindsym Mod1+r mode "default"
+		bindsym r mode "default"
+		bindsym Mod1+s mode "default"
+		bindsym s mode "default"
 }
 
 #bindsym Mod1+r mode "resize"
