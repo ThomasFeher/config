@@ -81,9 +81,6 @@ bindsym Mod1+Return exec urxvt -e screen
 #bindsym Mod1+Shift+q kill
 bindsym Mod1+k kill
 
-# start dmenu (a program launcher) "_e_xecute"
-bindsym Mod1+n exec dmenu_run
-
 # change focus
 bindsym Mod1+i focus left
 bindsym Mod1+a focus down
@@ -191,10 +188,12 @@ mode "resize" {
         bindsym e 		    resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left        resize shrink width 10 px or 10 ppt
+        #bindsym Left        resize shrink width 10 px or 10 ppt
+        bindsym Left        resize grow left 10 px or 10 ppt
         bindsym Down        resize grow height 10 px or 10 ppt
         bindsym Up          resize shrink height 10 px or 10 ppt
-        bindsym Right       resize grow width 10 px or 10 ppt
+        #bindsym Right       resize grow width 10 px or 10 ppt
+        bindsym Right       resize grow right 10 px or 10 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -380,6 +379,9 @@ client.urgent 	 		$baseB0 $yellow $baseB3 $orange
 client.focused_inactive 	$custom $custom $baseB2 $violet
 client.focused_inactive 	$baseB0 $custom $baseB2 $violet
 
+
+# start dmenu (a program launcher) "_e_xecute"
+bindsym Mod1+n exec dmenu_run -fn -*-lucidatypewriter-bold-*-*-sans-17-*-*-*-*-*-*-* -nb '#b58900' -nf '#002b36'
 
 # suspend
 #exec /usr/bin/suspend.sh
