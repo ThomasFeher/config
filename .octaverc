@@ -3,3 +3,4 @@ page_output_immediately(1)
 jit_enable(1)
 graphics_toolkit gnuplot
 warning ("off", "Octave:broadcast")
+pkg load all
