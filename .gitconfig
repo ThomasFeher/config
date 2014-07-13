@@ -14,5 +14,6 @@
 	ui = true
 [core]
 	pager = less -FRSX
+	autocrlf = input
 [include]
 	path = .gitconfig_individual
