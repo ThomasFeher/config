@@ -1,5 +1,6 @@
 [merge]
 	tool = vimdiff
+	ff = false
 [push]
 	default = simple
 [diff]
