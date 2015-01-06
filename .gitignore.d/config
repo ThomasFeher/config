@@ -61,6 +61,7 @@
 .lesshst
 .local/
 .macromedia/
+.matlab/
 .mc/
 .mozilla/
 .mpv/
@@ -84,6 +85,7 @@
 .weechat/logs/
 .weechat/weechat.log
 .weechat/otr/
+.wigerc
 .wine/
 .xim.template
 .xinitrc.template
@@ -180,10 +182,12 @@ uzbl/
 .vacation.msg
 .viminfo.tmp
 .wavesurfer/
+.weechat/script/
 Arbeitsfläche/
 Dokumente/
 backup/
 logs/
+matlab_crash_dump*
 octave/
 oms/
 omsVic/
