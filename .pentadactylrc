@@ -4,4 +4,6 @@ loadplugins '\.(js|penta)$'
 group user
 set guioptions=bCrsn
 
+colorscheme solarized-dark
+
 " vim: set ft=pentadactyl:
