@@ -1,15 +1,22 @@
-get vcsh
+install configuration files
+===========================
+
+* get vcsh
     git clone https://github.com/RichiH/vcsh.git
-make symlink to dir in $PATH
+* make symlink to dir in $PATH
     ln -s …
-make shure ssh key is registered at github
-   …
-clone config
+* make shure ssh key is registered at github
+	* generate ssh key, if not done yet
+		https://help.github.com/articles/generating-ssh-keys/
+	* login at github and add key
+* clone config
     vcsh clone git@github.com:ThomasFeher/config.git config
-add all untracked files to gitignore
+* add all untracked files to gitignore
 	vcsh write-gitignore config
 
-* installing software
+install software
+================
+
 urxvt
     zypper in rxvt-unicode
 weechat
