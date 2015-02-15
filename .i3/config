@@ -309,7 +309,7 @@ colors {
 }
 
 	# show tray on primary monitor
-	tray_output primary
+	# tray_output primary
 }
 
 #sound control
