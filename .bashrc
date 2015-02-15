@@ -27,10 +27,6 @@
 
 test -s ~/.alias && . ~/.alias || true
 
-set -o vi
-
-export TERM='xterm-color'
-
 alias vim='gvim -v'
 export MC_SKIN=/home/tom/.mc/lib/solarized.ini
 
