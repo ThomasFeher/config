@@ -45,4 +45,4 @@ fi
 # Neo:                          # Neo Tastaturbelegung
 PATH=$PATH:$HOME/neo/    # Neo Tastaturbelegung
 export PATH                     # Neo Tastaturbelegung
-asdf                            # Neo Tastaturbelegung; mit einem # am Zeilenanfang bleibt QWERTZ das Standardlayout, sonst ist es Neo
+bone                            # Neo Tastaturbelegung; mit einem # am Zeilenanfang bleibt QWERTZ das Standardlayout, sonst ist es Neo
