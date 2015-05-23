@@ -8,9 +8,26 @@
 [difftool]
 	prompt = false
 [alias]
-	lg1 = log --graph --all --format=format:'%C(red)%h%C(reset) - %C(green)(%ar)%C(reset) %C(blue)%s%C(reset) %C(white)- %an%C(reset)%C(yellow)%d%C(reset)' --abbrev-commit --date=relative
+	lg = log --graph --all --format=format:'%C(red)%h%C(reset) - %C(green)(%ar)%C(reset) %C(blue)%s%C(reset) %C(white)- %an%C(reset)%C(yellow)%d%C(reset)' --abbrev-commit --date=relative
 	lg2 = log --graph --all --format=format:'%C(red)%h%C(reset) - %C(green)%aD%C(reset) %C(green)(%ar)%C(reset)%C(yellow)%d%C(reset)%n''          %C(blue)%s%C(reset) %C(white)- %an%C(reset)' --abbrev-commit
-	lg = !"git lg1"
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	dc = diff --cached
+	# log with all changes as diff (patch)
+	loog = log -p
+	# show number of commits per user
+	who = shortlog -s --
+	# git graphviz | dotty /dev/stdin
+	graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
+	whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+	whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+	# see new commits on a branch
+	new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
+	# see fetched commits
+	lc = log ORIG_HEAD.. --stat --no-merges
 [color]
 	ui = true
 [core]
