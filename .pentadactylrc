@@ -3,6 +3,7 @@
 loadplugins '\.(js|penta)$'
 group user
 set guioptions=bCrsn
+set defsearch=duckduckgo
 
 colorscheme solarized-dark
 
