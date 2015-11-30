@@ -46,3 +46,5 @@ fi
 PATH=$PATH:$HOME/neo/    # Neo Tastaturbelegung
 export PATH                     # Neo Tastaturbelegung
 bone                            # Neo Tastaturbelegung; mit einem # am Zeilenanfang bleibt QWERTZ das Standardlayout, sonst ist es Neo
+
+export PATH=$PATH:$HOME/texlive/2015/bin/x86_64-linux
