@@ -25,4 +25,4 @@ otr für weechat
     zypper in python-pip python3-pip python-devel python3-devel
     pip install python-potr
 i3wm
-	zypper in i3 i3status
+	zypper in i3 i3status dmenu dunst
