@@ -54,6 +54,7 @@
 .gnuplot_history
 .gstreamer-0.10/
 .gtkrc-2.0
+.i3/autostart_local.sh
 .isomaster
 .java/
 .kde4/

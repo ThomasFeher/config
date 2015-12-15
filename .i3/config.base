@@ -338,5 +338,6 @@ bindsym Mod1+n exec dmenu_run -fn -*-lucidatypewriter-bold-*-*-sans-17-*-*-*-*-*
 
 # autostart
 exec $HOME/.i3/autostart.sh
+exec $HOME/.i3/autostart_local.sh
 
 # vim: ft=i3:
