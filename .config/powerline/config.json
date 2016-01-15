@@ -4,13 +4,17 @@
 	},
 	"ext": {
 		"ipython": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "in",
 			"local_themes": {
 				"rewrite": "rewrite",
 				"out": "out",
 				"in2": "in2"
 			}
+		},
+		"pdb": {
+			"colorscheme": "solarized",
+			"theme": "default"
 		},
 		"shell": {
 			"colorscheme": "solarized",
@@ -21,7 +25,7 @@
 			}
 		},
 		"tmux": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "default"
 		},
 		"vim": {
@@ -41,7 +45,7 @@
 			}
 		},
 		"wm": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "default"
 		}
 	}
