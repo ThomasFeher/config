@@ -31,7 +31,6 @@ alias vim='gvim -v'
 export MC_SKIN=/home/tom/.mc/lib/solarized.ini
 
 #enable "powerline" prompt
-#. /usr/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 . /usr/share/powerline/bash/powerline.sh
 
 # set git to english
