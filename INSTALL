@@ -26,3 +26,5 @@ otr für weechat
     pip install python-potr
 i3wm
 	zypper in i3 i3status dmenu dunst
+misc
+    zypper in redshift
