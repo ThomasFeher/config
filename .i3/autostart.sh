@@ -12,4 +12,4 @@ firefox &
 urxvt -e screen &
 dolphin &
 weechat &
-owncloud &
+SpiderOak &
