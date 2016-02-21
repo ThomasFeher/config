@@ -28,6 +28,7 @@
 	new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
 	# see fetched commits
 	lc = log ORIG_HEAD.. --stat --no-merges
+	fa = fetch --all
 [color]
 	ui = true
 [core]
