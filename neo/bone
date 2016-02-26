@@ -128,11 +128,12 @@ if [ -n "$SSH_CONNECTION" ]; then
 fi
 
 if [ -z ${DISPLAY} ]; then
-	setleds +num || numlock_manually an
-	set_keymap "${NEO_CONSOLE_KEYMAP}"
-	# schalte versehentlich angeschaltetes CapsLock aus
-	# keymap hat nur shiftlock => man kommt nicht mehr raus…
-	setleds -caps
+	$ECHO_e "Default Keyboard-Layout des Systems eingestellt!"
+	#setleds +num || numlock_manually an
+	#set_keymap "${NEO_CONSOLE_KEYMAP}"
+	## schalte versehentlich angeschaltetes CapsLock aus
+	## keymap hat nur shiftlock => man kommt nicht mehr raus…
+	#setleds -caps
 else
 	# versuche in letzter Sekunde versehentliches CapsLock anschalten zu verhindern
 	# xmodmap hat nur shiftlock => man kommt nicht mehr raus…
