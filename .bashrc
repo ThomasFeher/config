@@ -28,7 +28,6 @@
 test -s ~/.alias && . ~/.alias || true
 
 alias vim='gvim -v'
-export MC_SKIN=/home/tom/.mc/lib/solarized.ini
 
 #enable "powerline" prompt
 . /usr/share/powerline/bash/powerline.sh
