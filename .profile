@@ -42,9 +42,12 @@ fi
 #change color temperature of screen according to daytime
 (redshift -l 51.03:13.72 -t 6500:3700 &> /dev/null &)
 
-# Neo:                          # Neo Tastaturbelegung
-PATH=$PATH:$HOME/neo/    # Neo Tastaturbelegung
-export PATH                     # Neo Tastaturbelegung
-bone                            # Neo Tastaturbelegung; mit einem # am Zeilenanfang bleibt QWERTZ das Standardlayout, sonst ist es Neo
+# Neo Tastaturbelegung
+neo_dir=$HOME/neo/
+if [[ -e $neo_dir ]]
+then
+	export PATH=$PATH:$neo_dir
+	bone
+fi
 
 export PATH=$PATH:$HOME/texlive/2015/bin/x86_64-linux

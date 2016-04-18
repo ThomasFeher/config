@@ -27,10 +27,17 @@
 
 test -s ~/.alias && . ~/.alias || true
 
-alias vim='gvim -v'
+if `command -v gvim > /dev/null`
+then
+	alias vim='gvim -v'
+fi
 
 #enable "powerline" prompt
-. /usr/share/powerline/bash/powerline.sh
+powerline_file=/usr/share/powerline/bash/powerline.sh
+if [[ -e $powerline_file ]]
+then
+	source $powerline_file
+fi
 
 # set git to english
 #alias git='LANG=en_US git'
