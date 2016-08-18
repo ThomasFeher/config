@@ -19,7 +19,7 @@
 # v - vertical split
 # h - horizontal split
 # k - kill window
-# q - quit (not bound atm)
+# q - quit
 # n - dmenu (new)
 # f - fullscreen
 # r - "re" mode
@@ -320,6 +320,23 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
 
 # start dmenu (a program launcher) "_e_xecute"
 bindsym Mod1+n exec dmenu_run -fn -*-lucidatypewriter-bold-*-*-sans-17-*-*-*-*-*-*-* -nb '#b58900' -nf '#002b36'
+
+set $mode_quit Quit (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+set $Locker i3lock && sleep 1
+mode "$mode_quit" {
+	bindsym l exec --no-startup-id $Locker, mode "default"
+	bindsym e exec --no-startup-id i3-msg exit, mode "default"
+	bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+	bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+	bindsym r exec --no-startup-id systemctl reboot, mode "default"
+	bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
+
+# back to normal: Enter or Escape
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym q mode "default"
+}
+bindsym Mod1+q mode "$mode_quit"
 
 # suspend
 #exec /usr/bin/suspend.sh
