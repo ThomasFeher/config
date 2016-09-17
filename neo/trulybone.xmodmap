@@ -251,15 +251,13 @@ keycode 28 = 	x		X		asciicircum	Greek_omega	Next		Next		Greek_OMEGA	Greek_OMEGA
 keycode 29 = 	p		P		exclam		Greek_kappa	exclamdown	NoSymbol	multiply	NoSymbol
 !								!		κ		¡				× times
 keycode 30 = 	h		H		less		Greek_psi	KP_7		KP_7		Greek_PSI	Greek_PSI
-!								<		η						Ψ		Ψ
+!								<		ψ						Ψ		Ψ
 keycode 31 = 	l		L		greater		Greek_gamma	KP_8		KP_8		Greek_GAMMA	Greek_GAMMA
 !								>		γ						Γ		Γ
 keycode 32 = 	m		M		equal		Greek_phi	KP_9		KP_9		Greek_PHI	Greek_PHI
 !								=		φ 						Φ		Φ
 keycode 33 = 	w		W		ampersand	U03D5		KP_Add		KP_Add		U211A		NoSymbol
 !								&		ϕ Greek_phi	+		+		ℚ rational
-keycode 34 = ssharp		U1E9E		U017F	 Greek_finalsmallsigma  U2212		NoSymbol	jot		NoSymbol
-!	     	ß		ẞ Capital ß	ſ long s	ς		− real minus			∘ ring operator
 keycode 34 = 	q		Q		at		Greek_upsilon	period		KP_Decimal	nabla		NoSymbol
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -288,8 +286,6 @@ keycode 46 = 	s		S		minus		Greek_tau	KP_6		KP_6		partialderivative
 !						-		τ						∂
 keycode 47 = 	g		G		colon		Greek_delta	KP_Separator	comma		Greek_DELTA	Greek_DELTA
 !								:		δ		,		,		Δ		Δ
-! trulyerik
-!keycode 48 = 	y		Y		at		Greek_upsilon	period		KP_Decimal	nabla		NoSymbol
 keycode 48 = 	k		K		semicolon	Greek_theta	semicolon	NoSymbol	Greek_THETA	Greek_THETA
 !								@		υ		.		.		∇
 
@@ -317,12 +313,8 @@ keycode 59 = comma		endash	quotedbl	U03F1		KP_2		KP_2		U21D2		NoSymbol
 !				,		–		"		ϱ Greek_rho					⇒ implies
 keycode 60 = period	   enfilledcircbullet	apostrophe	U03D1		KP_3		KP_3		U21A6		NoSymbol
 !				.		•		'		ϑ Greek_theta					↦
-! trulyerik
-!keycode 61 = 	j		J		semicolon	Greek_theta	semicolon	NoSymbol	Greek_THETA	Greek_THETA
 keycode 61 = ssharp		U1E9E		U017F	 Greek_finalsmallsigma  U2212		NoSymbol	jot		NoSymbol
 !	     	ß		ẞ Capital ß	ſ long s	ς		− real minus			∘ ring operator
-!						;		θ		;				Θ
-!keycode 61 = 	y		Y		at		Greek_upsilon	period		KP_Decimal	nabla		NoSymbol
 
 
 
