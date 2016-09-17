@@ -237,84 +237,85 @@ keycode 20 = minus		emdash		NoSymbol	U2011		KP_Subtract	KP_Subtract	hyphen		NoSy
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !            Ebene1		Ebene2		Ebene3		Ebene5		Ebene4		Ebene4+Sh	Ebene6		Ebene7
 
-keycode 24 = 	j		J		ellipsis	Greek_xi	Prior		Prior		Greek_XI	Greek_XI
-!								…		ξ						Ξ		Ξ
-keycode 25 = 	d		D		underscore	NoSymbol	BackSpace	BackSpace	radical		NoSymbol
-!								_								√
-keycode 26 = 	u		U		bracketleft	Greek_lambda	Up		Up		Greek_LAMBDA	Greek_LAMBDA
-!								[		λ						Λ		Λ
-keycode 27 = 	a		A		bracketright	Greek_chi	Delete		Delete		U2102		NoSymbol
-!								]		χ						ℂ komplex
-keycode 28 = 	x		X		asciicircum	Greek_omega	Next		Next		Greek_OMEGA	Greek_OMEGA
-!								^		ω						Ω		Ω
+keycode 61 = ssharp		U1E9E		U017F	 Greek_finalsmallsigma  U2212		NoSymbol	jot		NoSymbol
+!	     	ß		ẞ Capital ß	ſ long s	ς		− real minus			∘ ring operator
+keycode 24 = 	j		J		ellipsis	Greek_theta	Prior		Prior		Greek_THETA	Greek_THETA
+!						…		Θ						θ		θ
+keycode 25 = 	d		D		underscore	Greek_delta	BackSpace	BackSpace	Greek_DELTA		Greek_DELTA
+!						_		δ						Δ		Δ
+keycode 26 = 	u		U		bracketleft	NoSymbol	Up		Up		includedin	NoSymbol
+!						[								⊂
+keycode 27 = 	a		A		bracketright	Greek_alpha	Delete		Delete		U2200		NoSymbol
+!						]		α						∀ for all
+keycode 28 = 	x		X		asciicircum	Greek_xi	Next		Next		Greek_XI	Greek_XI
+!						^		ξ						Ξ		Ξ
 
-keycode 29 = 	p		P		exclam		Greek_kappa	exclamdown	NoSymbol	multiply	NoSymbol
-!								!		κ		¡				× times
+keycode 29 = 	p		P		exclam		Greek_pi	exclamdown	NoSymbol	Greek_PI	Greek_PI
+!						!		π		¡				Π		Π
 keycode 30 = 	h		H		less		Greek_psi	KP_7		KP_7		Greek_PSI	Greek_PSI
-!								<		ψ						Ψ		Ψ
-keycode 31 = 	l		L		greater		Greek_gamma	KP_8		KP_8		Greek_GAMMA	Greek_GAMMA
-!								>		γ						Γ		Γ
-keycode 32 = 	m		M		equal		Greek_phi	KP_9		KP_9		Greek_PHI	Greek_PHI
-!								=		φ 						Φ		Φ
-keycode 33 = 	w		W		ampersand	U03D5		KP_Add		KP_Add		U211A		NoSymbol
-!								&		ϕ Greek_phi	+		+		ℚ rational
-keycode 34 = 	q		Q		at		Greek_upsilon	period		KP_Decimal	nabla		NoSymbol
+!						<		η						Ψ		Ψ
+keycode 31 = 	l		L		greater		Greek_lambda	KP_8		KP_8		Greek_LAMBDA	Greek_LAMBDA
+!						>		λ						Λ		Λ
+keycode 32 = 	m		M		equal		Greek_mu	KP_9		KP_9		ifonlyif	NoSymbol
+!						=		μ 						⇔
+keycode 33 = 	w		W		ampersand	Greek_omega		KP_Add		KP_Add		Greek_OMEGA		Greek_OMEGA
+!						&		ω 		+		+		Ω
+keycode 34 = 	q		Q		at		U03D5	period		KP_Decimal	U211A		NoSymbol
+!								@		ϕ phi		.		.		ℚ rational
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! The home row (middle row)
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !            Ebene1		Ebene2		Ebene3		Ebene5		Ebene4		Ebene4+Sh	Ebene6		Ebene7
 
-keycode 38 = 	c		C		backslash	NoSymbol	Home		Home		includedin	NoSymbol
-!								\								⊂
-keycode 39 = 	t		T		slash		Greek_iota	Left		Left		integral	NoSymbol
-!								/		ι						∫
-keycode 40 = 	i		I		braceleft	Greek_alpha	Down		Down		U2200		NoSymbol
-!								{		α						∀ for all
-keycode 41 = 	e		E		braceright	Greek_epsilon	Right		Right		U2203		NoSymbol
-!								}		ε						∃ there exists
+keycode 38 = 	c		C		backslash	Greek_chi		Home	Home	U2102	NoSymbol
+!								\			χ								ℂ komplex
+keycode 39 = 	t		T		slash		Greek_tau		Left	Left	partialderivative	NoSymbol
+!								/			τ								∂
+keycode 40 = 	i		I		braceleft	Greek_iota		Down	Down	integral		NoSymbol
+!								{			ι								∫
+keycode 41 = 	e		E		braceright	Greek_epsilon	Right	Right 	U2203		NoSymbol
+!								}			ε								∃ there exists
 keycode 42 = 	o		O		asterisk	Greek_omicron	End		End		elementof	NoSymbol
-!								*		ο						∈
+!								*			ο								∈
 
-keycode 43 = 	b		B		question	Greek_sigma	questiondown	NoSymbol	Greek_SIGMA	Greek_SIGMA
-!								?		σ		¿				Σ		Σ
+keycode 43 = 	b		B		question	Greek_beta	questiondown	NoSymbol	U21D0	NoSymbol
+!						?		β		¿				⇐
 keycode 44 = 	n		N		parenleft	Greek_nu	KP_4		KP_4		U2115		NoSymbol
 !						(		ν						ℕ natural
 keycode 45 = 	r		R		parenright	Greek_rho	KP_5		KP_5		U211D		NoSymbol
 !						)		ρ						ℝ real
-keycode 46 = 	s		S		minus		Greek_tau	KP_6		KP_6		partialderivative
-!						-		τ						∂
-keycode 47 = 	g		G		colon		Greek_delta	KP_Separator	comma		Greek_DELTA	Greek_DELTA
-!								:		δ		,		,		Δ		Δ
-keycode 48 = 	k		K		semicolon	Greek_theta	semicolon	NoSymbol	Greek_THETA	Greek_THETA
-!								@		υ		.		.		∇
+keycode 46 = 	s		S		minus		Greek_sigma	KP_6		KP_6		Greek_SIGMA 	Greek_SIGMA
+!						-		σ						Σ 		Σ
+keycode 47 = 	g		G		colon		Greek_gamma	KP_Separator	comma		Greek_GAMMA	Greek_GAMMA
+!								:		γ		,		,		Γ		Γ
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! The lower row
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !            Ebene1		Ebene2		Ebene3		Ebene5		Ebene4		Ebene4+Sh	Ebene6		Ebene7
 
-keycode 52 = 	f		F	numbersign	NoSymbol	Escape		Escape		union		NoSymbol
-!							#								∪
-keycode 53 = 	v		V	dollar		U03F5		Tab		ISO_Left_Tab	intersection	NoSymbol
-!							$		ϵ						∩
-keycode 54 = 	udiaeresis 	Udiaeresis	bar		Greek_eta	Insert		Insert		U2135		NoSymbol
-!				ü			Ü			|		η						ℵ
-keycode 55 = 	adiaeresis 	Adiaeresis	asciitilde	Greek_pi	Return		Return		Greek_PI	Greek_PI
-!				ä 			Ä 			~		π						Π		Π
-keycode 56 = 	odiaeresis 	Odiaeresis 	grave		Greek_zeta	Undo		Redo		U2124		NoSymbol
-!				ö 			Ö 			`		ζ						ℤ integers
+keycode 52 = 	f		F	numbersign	Greek_phi	Escape		Escape		Greek_PHI		Greek_PHI
+!		 		 		#		φ						Φ 	Φ
+keycode 53 = 	v		V	dollar		NoSymbol		Tab		ISO_Left_Tab	radical	NoSymbol
+!						$								√
+keycode 54 = udiaeresis	Udiaeresis	bar		NoSymbol	Insert		Insert		union		NoSymbol
+!		ü		Ü		|		 						∪
+keycode 55 = adiaeresis	Adiaeresis		asciitilde	Greek_eta	Return		Return		U2135	NoSymbol
+!		ä		Ä		~		η						ℵ
+keycode 56 = odiaeresis	Odiaeresis		grave		U03F5	Undo		Redo		U2203		NoSymbol
+!		ö		Ö		`		ϵ						∩
 
-keycode 57 = 	y		Y		plus		Greek_beta	colon		NoSymbol	U21D0		NoSymbol
-!								+		β		:				⇐
-keycode 58 = 	z		Z		percent		Greek_mu	KP_1		KP_1		ifonlyif	NoSymbol
-!								%		μ						⇔
-keycode 59 = comma		endash	quotedbl	U03F1		KP_2		KP_2		U21D2		NoSymbol
-!				,		–		"		ϱ Greek_rho					⇒ implies
+keycode 57 = 	y		Y		plus		Greek_upsilon	colon		NoSymbol	nabla		NoSymbol
+!						+		υ		:				∇
+keycode 58 = 	z		Z		percent		Greek_zeta	KP_1		KP_1		U2124	NoSymbol
+!						%		ζ						ℤ integers
+keycode 59 = comma		endash		quotedbl	U03F1		KP_2		KP_2		U21D2		NoSymbol
+!		,		–		"		ϱ Greek_rho					⇒ implies
 keycode 60 = period	   enfilledcircbullet	apostrophe	U03D1		KP_3		KP_3		U21A6		NoSymbol
-!				.		•		'		ϑ Greek_theta					↦
-keycode 61 = ssharp		U1E9E		U017F	 Greek_finalsmallsigma  U2212		NoSymbol	jot		NoSymbol
-!	     	ß		ẞ Capital ß	ſ long s	ς		− real minus			∘ ring operator
+!		.		•		'		ϑ Greek_theta					↦
+keycode 48 = 	k		K		semicolon	Greek_kappa	semicolon	NoSymbol	multiply	NoSymbol
+!						;		κ		;				×
 
 
 
