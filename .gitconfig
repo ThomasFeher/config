@@ -29,6 +29,8 @@
 	# see fetched commits
 	lc = log ORIG_HEAD.. --stat --no-merges
 	fa = fetch --all
+	# checkout Gitlab merge requests using `git mr <remote> <x>` (x is the MR number)
+	mr = !sh -c 'git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2' -
 [color]
 	ui = true
 [core]
