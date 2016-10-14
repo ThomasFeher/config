@@ -27,4 +27,4 @@ otr für weechat
 i3wm
 	zypper in i3 i3status dmenu dunst
 misc
-    zypper in redshift
+    zypper in redshift powerline
