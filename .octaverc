@@ -6,3 +6,4 @@ warning ("off", "Octave:broadcast")
 pkg load all
 #edit mode async
 #edit editor "urxvt -e 'vim %s'"
+read_readline_init_file ("~/.inputrc"); # taken from: http://savannah.gnu.org/bugs/?49323
