@@ -76,9 +76,7 @@
 *color7:                S_base2
 *color15:               S_base3
 
-!URxvt*font:             xft:DejaVu Sans Mono:pixelsize=12!:antialias=true:hinting=true
-!URxvt*font: xft:DejaVuSansMono for Powerline:size=10
-URxvt*font: xft:DroidSansMono for Powerline:size=11
+URxvt*font: xft:Iosevka Term Medium:size=12
 URxvt*scrollBar:        false
 URxvt*mapAlert:         true
 URxvt*visualBell:       true
