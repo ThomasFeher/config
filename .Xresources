@@ -77,6 +77,9 @@
 *color15:               S_base3
 
 URxvt*font: xft:Iosevka Term Medium:size=12
+!see installed fonts with `fc-list`
+! reduce horizontal spacing between letters, this will make lots of unicode chars not rendering
+!URxvt*letterSpace: -1
 URxvt*scrollBar:        false
 URxvt*mapAlert:         true
 URxvt*visualBell:       true
