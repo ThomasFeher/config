@@ -28,7 +28,11 @@
 	new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
 	# see fetched commits
 	lc = log ORIG_HEAD.. --stat --no-merges
+	# fetch from all remotes
 	fa = fetch --all
+	# fetch from all remotes and delete local branches whos remote tracking
+	# branch was deleted
+	fap = fetch --all --prune
 	# checkout Gitlab merge requests using `git mr <remote> <x>` (x is the MR number)
 	mr = !sh -c 'git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2' -
 [color]
