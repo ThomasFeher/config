@@ -33,8 +33,8 @@ if [ -f ~/.profile.local ]; then
 fi
 
 #ensure our ssh-agent is running and that our keys are added
-eval `ssh-agent` > /dev/null
-keys=`ssh-add -l > /dev/null ; echo $?`
+eval $(ssh-agent) > /dev/null
+keys=$(ssh-add -l > /dev/null ; echo $?)
 if [[ $keys != "0" ]]; then
 	ssh-add
 fi

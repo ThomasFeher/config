@@ -27,7 +27,7 @@
 
 test -s ~/.alias && . ~/.alias || true
 
-if `command -v gvim > /dev/null`
+if $(command -v gvim > /dev/null)
 then
 	alias vim='gvim -v'
 fi
@@ -36,7 +36,7 @@ fi
 powerline_file=/usr/share/powerline/bash/powerline.sh
 if [[ -e $powerline_file ]]
 then
-	source $powerline_file
+	. $powerline_file
 fi
 
 # set git to english
