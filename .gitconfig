@@ -42,3 +42,5 @@
 	autocrlf = input
 [include]
 	path = .gitconfig_individual
+[rebase]
+	autosquash = true
