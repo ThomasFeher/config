@@ -117,7 +117,7 @@ bindsym Mod1+v split v
 bindsym Mod1+f fullscreen
 
 # change container layout (stacked, tabbed, default)
-mode "layout" {
+mode "layout s:stacked, t:tabbed, d:default(split)" {
 	bindsym s layout stacking; mode "default"
 	bindsym t layout tabbed; mode "default"
 	#bindsym g layout default
@@ -128,7 +128,7 @@ mode "layout" {
 	bindsym Mod1+l mode "default"
 	bindsym l mode "default"
 }
-bindsym Mod1+l mode "layout"
+bindsym Mod1+l mode "layout s:stacked, t:tabbed, d:default(split)"
 
 # toggle tiling / floating
 bindsym Mod1+Shift+space floating toggle
