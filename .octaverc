@@ -1,9 +1,4 @@
 more off
 page_output_immediately(1)
-jit_enable(1)
 graphics_toolkit fltk
 warning ("off", "Octave:broadcast")
-pkg load all
-#edit mode async
-#edit editor "urxvt -e 'vim %s'"
-read_readline_init_file ("~/.inputrc"); # taken from: http://savannah.gnu.org/bugs/?49323
