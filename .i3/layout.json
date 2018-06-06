@@ -4,7 +4,7 @@
     "name": "1",
     "border": "normal",
     "floating": "auto_off",
-    "layout": "splith",
+    "layout": "tabbed",
     "percent": 0.125,
     "type": "workspace",
     "nodes": [
@@ -28,7 +28,7 @@
     "name": "2",
     "border": "normal",
     "floating": "auto_off",
-    "layout": "splith",
+    "layout": "tabbed",
     "percent": 0.25,
     "type": "workspace",
     "nodes": [
@@ -93,7 +93,7 @@
     "name": "5",
     "border": "normal",
     "floating": "auto_off",
-    "layout": "splith",
+    "layout": "tabbed",
     "percent": 0.5,
     "type": "workspace",
     "nodes": [
@@ -117,7 +117,7 @@
     "name": "9",
     "border": "normal",
     "floating": "auto_off",
-    "layout": "splith",
+    "layout": "tabbed",
     "percent": 0.125,
     "type": "workspace",
     "nodes": [
