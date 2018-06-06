@@ -50,4 +50,4 @@ then
 	bone
 fi
 
-export PATH=$PATH:$HOME/texlive/2015/bin/x86_64-linux
+export PATH=$PATH:/data/texlive/2018/bin/x86_64-linux
