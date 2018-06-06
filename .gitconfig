@@ -40,6 +40,7 @@
 [core]
 	pager = less -FRSX
 	autocrlf = input
+	editor = nvim
 [include]
 	path = .gitconfig_individual
 [rebase]
