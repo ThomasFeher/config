@@ -418,7 +418,7 @@ mode "$mode_quit" {
 	bindsym l exec --no-startup-id $Locker, mode "default"
 	bindsym e exec --no-startup-id i3-msg exit, mode "default"
 	bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
-	bindsym h exec --no-startup-id $Locker && systemctl hibernate -i, mode "default"
+	bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
 	bindsym r exec --no-startup-id systemctl reboot, mode "default"
 	bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
 
