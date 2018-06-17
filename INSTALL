@@ -17,14 +17,4 @@ install configuration files
 install software
 ================
 
-urxvt
-    zypper in rxvt-unicode
-weechat
-    zypper in weechat weechat-python weechat-perl
-otr für weechat
-    zypper in python-pip python3-pip python-devel python3-devel
-    pip install python-potr
-i3wm
-	zypper in i3 i3status dmenu dunst
-misc
-    zypper in redshift powerline
+zypper in rxvt-unicode weechat weechat-python weechat-perl python-pip python3-pip i3 i3status dmenu dunst redshift powerline git neovim ctags
