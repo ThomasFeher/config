@@ -351,6 +351,9 @@ bindsym Mod1+q mode "$mode_quit"
 #######################################################################
 #exec i3-config-wizard
 
+# make octave figure windows floating by default
+for_window [title="Figure*"] floating enable
+
 # autostart
 exec $HOME/.i3/autostart.sh
 exec $HOME/.i3/autostart_local.sh
