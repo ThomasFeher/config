@@ -1,4 +1,3 @@
-term screen-16color # setting this to make neovim setting its color mode correctly
 #attrcolor b ".I"
 #termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 #defbce "on"
