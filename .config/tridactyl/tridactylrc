@@ -1,0 +1,4 @@
+" Use the build-in search function of firefox as long as `find()` is not
+" working properly
+" Unbinds <C-f> from scrolling, use <C-d> instead
+unbind <C-f>
