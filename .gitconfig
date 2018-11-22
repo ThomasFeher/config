@@ -45,3 +45,5 @@
 	path = .gitconfig_individual
 [rebase]
 	autosquash = true
+[checkout]
+    defaultRemote = origin
