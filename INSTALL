@@ -18,3 +18,6 @@ install software
 ================
 
 zypper in rxvt-unicode weechat weechat-python weechat-perl python-pip python3-pip i3 i3status dmenu dunst redshift powerline git neovim ctags
+
+copy lates `iosevka-term` font from https://github.com/be5invis/Iosevka/releases into `~/.fonts/`
+run `sudo fc-cache -fv`
