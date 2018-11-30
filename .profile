@@ -43,11 +43,14 @@ fi
 (redshift -l 51.03:13.72 -t 6500:3700 &> /dev/null &)
 
 # Neo Tastaturbelegung
-neo_dir=$HOME/neo/
-if [[ -e $neo_dir ]]
-then
-	export PATH=$PATH:$neo_dir
-	bone
+# only if not in ssh session
+if [ -z "$SSH_CLIENT" ] && [ -z "$SSH_CONNECTION" ] && [ -z "$SSH_TTY" ]; then
+	neo_dir=$HOME/neo/
+	if [[ -e $neo_dir ]]
+	then
+		export PATH=$PATH:$neo_dir
+		boneg
+	fi
 fi
 
 export PATH=$PATH:/data/texlive/2018/bin/x86_64-linux
