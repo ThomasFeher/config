@@ -41,3 +41,8 @@ fi
 
 # set git to english
 #alias git='LANG=en_US git'
+
+if command -v thefuck > /dev/null
+then
+    eval $(thefuck --alias ups)
+fi
