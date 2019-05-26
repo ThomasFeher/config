@@ -406,7 +406,7 @@ client.focused_inactive 	$baseB0 $custom $baseB2 $violet
 bindsym Mod1+n exec dmenu_run -fn -*-lucidatypewriter-bold-*-*-sans-17-*-*-*-*-*-*-* -nb '#b58900' -nf '#002b36'
 
 set $mode_quit Quit (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
-set $Locker i3lock && sleep 1
+set $Locker i3lock -c 000000 && sleep 1
 mode "$mode_quit" {
 	bindsym l exec --no-startup-id $Locker, mode "default"
 	bindsym e exec --no-startup-id i3-msg exit, mode "default"
