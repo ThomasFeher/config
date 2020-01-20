@@ -11,5 +11,4 @@ thunderbird &
 firefox &
 alacritty -e screen &
 dolphin &
-weechat &
 SpiderOak &
