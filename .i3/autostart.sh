@@ -9,7 +9,7 @@ i3-msg "append_layout $HOME/.i3/layout.json"
 # load applications
 thunderbird &
 firefox &
-urxvt -e screen &
+alacritty -e screen &
 dolphin &
 weechat &
 SpiderOak &

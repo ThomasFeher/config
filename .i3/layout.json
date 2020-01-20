@@ -77,8 +77,8 @@
             "percent": 0.5,
             "swallows": [
                {
-				   "class": "^URxvt$",
-				   "instance": "^urxvt$",
+				   "class": "^Alacritty$",
+				   "instance": "^Alacritty$",
 				   "title": "^screen"
                }
             ],
