@@ -11,4 +11,3 @@ thunderbird &
 firefox &
 alacritty -e tmux &
 dolphin &
-SpiderOak &
