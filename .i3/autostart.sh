@@ -9,6 +9,6 @@ i3-msg "append_layout $HOME/.i3/layout.json"
 # load applications
 thunderbird &
 firefox &
-alacritty -e screen &
+alacritty -e tmux &
 dolphin &
 SpiderOak &
