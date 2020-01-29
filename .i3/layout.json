@@ -1,6 +1,38 @@
 // vim:ts=4:sw=4:et
 {
     // workspace with 1 children
+    "name": "0",
+    "border": "normal",
+    "floating": "auto_off",
+    "fullscreen_mode": 1,
+    "layout": "splith",
+    "percent": null,
+    "type": "workspace",
+    "nodes": [
+        {
+            "border": "none",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 436,
+               "width": 724,
+               "x": 0,
+               "y": 0
+            },
+            "name": "screen",
+            "percent": 0.5,
+            "swallows": [
+               {
+				   "class": "^Alacritty$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // workspace with 1 children
     "name": "1",
     "border": "normal",
     "floating": "auto_off",
@@ -46,40 +78,6 @@
             "swallows": [
                {
 				   "class": "^Firefox$"
-               }
-            ],
-            "type": "con"
-        }
-    ]
-}
-
-{
-    // workspace with 1 children
-    "name": "3",
-    "border": "normal",
-    "floating": "auto_off",
-    "fullscreen_mode": 1,
-    "layout": "splith",
-    "percent": null,
-    "type": "workspace",
-    "nodes": [
-        {
-            "border": "none",
-            "current_border_width": 0,
-            "floating": "auto_off",
-            "geometry": {
-               "height": 436,
-               "width": 724,
-               "x": 0,
-               "y": 0
-            },
-            "name": "screen",
-            "percent": 0.5,
-            "swallows": [
-               {
-				   "class": "^Alacritty$",
-				   "instance": "^Alacritty$",
-				   "title": "^screen"
                }
             ],
             "type": "con"
