@@ -17,7 +17,7 @@ install configuration files
 install software
 ================
 
-zypper in alacritty python-pip python3-pip i3 i3status dmenu dunst redshift powerline git neovim ctags
+zypper in alacritty bat python-pip python3-pip i3 i3status dmenu dunst redshift powerline git neovim ctags
 
 `git clone `https://github.com/eendroroy/alacritty-theme.git ~/.config/alacritty/themes`
 
