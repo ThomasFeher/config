@@ -60,3 +60,6 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # use custom built neovim
 export PATH="$HOME/bin/neovim/bin:$PATH"
+
+# used by tools installed via yarn
+export PATH="$PATH:$HOME/.yarn/bin"
