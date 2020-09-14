@@ -57,3 +57,6 @@ export PATH=$PATH:/data/texlive/2018/bin/x86_64-linux
 
 # used by tools installed via pip and probably others
 export PATH="$PATH:$HOME/.local/bin"
+
+# use custom built neovim
+export PATH="$HOME/bin/neovim/bin:$PATH"
