@@ -53,8 +53,6 @@ if [ -z "$SSH_CLIENT" ] && [ -z "$SSH_CONNECTION" ] && [ -z "$SSH_TTY" ]; then
 	fi
 fi
 
-export PATH=$PATH:/data/texlive/2018/bin/x86_64-linux
-
 # used by tools installed via pip and probably others
 export PATH="$PATH:$HOME/.local/bin"
 
