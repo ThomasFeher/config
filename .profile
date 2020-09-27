@@ -58,8 +58,17 @@ export PATH=$PATH:/data/texlive/2018/bin/x86_64-linux
 # used by tools installed via pip and probably others
 export PATH="$PATH:$HOME/.local/bin"
 
+# used by tools installed via yarn
+export PATH="$PATH:$HOME/.yarn/bin"
+
 # use custom built neovim
 export PATH="$HOME/bin/neovim/bin:$PATH"
 
-# used by tools installed via yarn
-export PATH="$PATH:$HOME/.yarn/bin"
+# use neovim for all kinds of text editing
+export EDITOR=nvim
+export GIT_EDITOR=nvim
+export VISUAL=nvim
+export DIFFPROG="nvim -d"
+# Use neovim as manpager `:h Man`
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
