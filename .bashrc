@@ -46,3 +46,9 @@ if command -v thefuck > /dev/null
 then
     eval $(thefuck --alias ups)
 fi
+
+bob_bash_completion=$HOME/src/bob/contrib/bash-completion/bob
+if [[ -e $bob_bash_completion ]]
+then
+	source $bob_bash_completion
+fi
