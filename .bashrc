@@ -52,3 +52,6 @@ if [[ -e $bob_bash_completion ]]
 then
 	source $bob_bash_completion
 fi
+
+# source: https://github.com/trapd00r/LS_COLORS
+. ".lscolors.sh"
