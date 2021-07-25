@@ -71,3 +71,6 @@ export DIFFPROG="nvim -d"
 # Use neovim as manpager `:h Man`
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
+
+# use custom built neovim
+export PATH="$HOME/bin/neovim/bin:$PATH"
