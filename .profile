@@ -49,7 +49,8 @@ if [ -z "$SSH_CLIENT" ] && [ -z "$SSH_CONNECTION" ] && [ -z "$SSH_TTY" ]; then
 	if [[ -e $neo_dir ]]
 	then
 		export PATH=$PATH:$neo_dir
-		boneg
+		boneg # for normal german keyboards
+		# bone # for truely ergonomic and ergodox
 	fi
 fi
 
