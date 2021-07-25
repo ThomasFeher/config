@@ -438,6 +438,10 @@ bindsym Mod1+q mode "$mode_quit"
 # make octave figure windows floating by default
 for_window [title="Figure*"] floating enable
 
+# Trackmania needs to handle the window size itself to fit to its graphics
+# configuration
+for_window [title="Trackmania"] floating enable, move absolute position center
+
 # autostart
 exec $HOME/.i3/autostart.sh
 exec $HOME/.i3/autostart_local.sh
