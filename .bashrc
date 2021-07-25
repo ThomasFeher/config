@@ -50,8 +50,10 @@ fi
 bob_bash_completion=$HOME/src/bob/contrib/bash-completion/bob
 if [[ -e $bob_bash_completion ]]
 then
-	source $bob_bash_completion
+	# shellcheck source=/dev/null
+	source "$bob_bash_completion"
 fi
 
 # source: https://github.com/trapd00r/LS_COLORS
-. ".lscolors.sh"
+# shellcheck source=/dev/null
+. "$HOME/.lscolors.sh"
