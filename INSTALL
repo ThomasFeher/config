@@ -19,7 +19,7 @@ install software
 
 zypper in alacritty bat ctags dmenu dunst fd fzf git i3 i3status neovim powerline python-pip python3-pip redshift ripgrep the_silver_searcher
 
-`git clone `https://github.com/eendroroy/alacritty-theme.git ~/.config/alacritty/themes`
+`git clone https://github.com/eendroroy/alacritty-theme.git ~/.config/alacritty/themes`
 
-copy lates `iosevka-term` font from https://github.com/be5invis/Iosevka/releases into `~/.fonts/`
+extract lates `super-ttc-iosevka-…` font from https://github.com/be5invis/Iosevka/releases into `~/.fonts/`
 run `sudo fc-cache -fv`
