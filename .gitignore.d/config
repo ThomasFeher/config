@@ -152,14 +152,17 @@ uzbl/
 .bash_logout
 .config/Task Coach/
 .config/Ulduzsoft/
+.config/alacritty/themes/
 .config/banshee-1/
 .config/dconf/
 .config/eog/
 .config/epdfview/
 .config/htop/
+.config/nvim/
 .config/pavucontrol.ini
 .dmenu_cache
 .fontconfig/
+.fonts/
 .forward
 .freemind/
 .gconf/
@@ -184,6 +187,7 @@ uzbl/
 .weechat/script/
 Arbeitsfläche/
 Dokumente/
+Sync/
 backup/
 logs/
 matlab_crash_dump*
