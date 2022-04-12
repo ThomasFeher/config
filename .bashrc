@@ -57,3 +57,8 @@ fi
 # source: https://github.com/trapd00r/LS_COLORS
 # shellcheck source=/dev/null
 . "$HOME/.lscolors.sh"
+
+# fzf bash completion
+[ -f /usr/share/bash-completion/completions/fzf ] && source /usr/share/bash-completion/completions/fzf
+# fzf key bindings
+[ -f /usr/share/bash-completion/completions/fzf-key-bindings ] && source /usr/share/bash-completion/completions/fzf-key-bindings
