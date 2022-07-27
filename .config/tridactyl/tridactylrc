@@ -4,3 +4,8 @@
 unbind <C-f>
 set tabsort mru
 colorscheme dark
+" ZZ Interfers with Firenvim, because there it is used to close Neovim and copy
+" the buffer content into the form.
+" If this is done while the Neovim frame is not focused, then Firefox is closed
+" and the buffer content is lost.
+unbind ZZ
