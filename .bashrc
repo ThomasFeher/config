@@ -32,6 +32,8 @@ then
 	alias vim='gvim -v'
 fi
 
+alias lock='i3lock --color=000000'
+
 #enable "powerline" prompt
 powerline_file=/usr/share/powerline/bash/powerline.sh
 if [[ -e $powerline_file ]]
