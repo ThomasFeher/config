@@ -1,5 +1,5 @@
 more off
 page_output_immediately(1)
-graphics_toolkit fltk
+graphics_toolkit qt
 warning ("off", "Octave:broadcast")
 history_control('erasedups')
