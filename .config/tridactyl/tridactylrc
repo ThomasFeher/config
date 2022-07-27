@@ -3,3 +3,4 @@
 " Unbinds <C-f> from scrolling, use <C-d> instead
 unbind <C-f>
 set tabsort mru
+colorscheme dark
