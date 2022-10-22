@@ -19,6 +19,9 @@ install software
 
 zypper in alacritty bat ctags dmenu dunst fd fzf git i3 i3status neovim powerline python-pip python3-pip redshift ripgrep the_silver_searcher
 
+systemctl --user enable redshift-gtk
+systemctl --user start redshift-gtk
+
 `git clone https://github.com/eendroroy/alacritty-theme.git ~/.config/alacritty/themes`
 
 extract lates `super-ttc-iosevka-…` font from https://github.com/be5invis/Iosevka/releases into `~/.fonts/`

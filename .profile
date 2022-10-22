@@ -39,9 +39,6 @@ if [[ $keys != "0" ]]; then
 	ssh-add
 fi
 
-#change color temperature of screen according to daytime
-(redshift -l 51.03:13.72 -t 6500:3700 &> /dev/null &)
-
 # Neo Tastaturbelegung
 # only if not in ssh session
 if [ -z "$SSH_CLIENT" ] && [ -z "$SSH_CONNECTION" ] && [ -z "$SSH_TTY" ]; then
