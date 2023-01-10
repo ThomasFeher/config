@@ -1,6 +1,4 @@
-// vim:ts=4:sw=4:et
 {
-    // workspace with 1 children
     "name": "0",
     "border": "normal",
     "floating": "auto_off",
@@ -32,7 +30,6 @@
 }
 
 {
-    // workspace with 1 children
     "name": "1",
     "border": "normal",
     "floating": "auto_off",
@@ -47,7 +44,7 @@
             "percent": 1,
             "swallows": [
                {
-					"class": "^Thunderbird$"
+					"class": "^thunderbird$"
                }
             ],
             "type": "con"
@@ -77,7 +74,7 @@
             "percent": 1,
             "swallows": [
                {
-				   "class": "^Firefox$"
+				   "class": "^firefox$"
                }
             ],
             "type": "con"
