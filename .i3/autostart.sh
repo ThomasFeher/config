@@ -7,6 +7,8 @@ i3-msg "workspace 0"
 i3-msg "append_layout $HOME/.i3/layout.json"
 
 # load applications
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+pamac-tray &
 thunderbird &
 firefox &
 alacritty -e tmux &

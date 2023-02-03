@@ -17,7 +17,7 @@ install configuration files
 install software
 ================
 
-zypper in alacritty bat ctags dmenu dunst fd fzf git i3 i3status neovim powerline python-pip python3-pip redshift ripgrep the_silver_searcher
+pacman -Syu alacritty bash-completion bat dmenu dunst fd fzf git i3-wm i3status pamac-gtk polkit-gnome powerline python-pip redshift ripgrep the_silver_searcher x11-ssh-askpass
 
 systemctl --user enable redshift-gtk
 systemctl --user start redshift-gtk
