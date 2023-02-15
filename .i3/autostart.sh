@@ -1,5 +1,8 @@
 #! /bin/sh
 
+# load keyboard layout
+setxkbmap de deadacute
+
 # go to a workspace that is not used by autostart applications to avoid wrong workspace name
 i3-msg "workspace 0"
 
