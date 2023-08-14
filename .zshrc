@@ -27,3 +27,11 @@ bindkey "\e[5~" history-beginning-search-backward
 bindkey "\e[6~" history-beginning-search-forward
 # delete
 bindkey "^[[3~" delete-char                                     # Delete key
+
+# include local bash completions
+autoload bashcompinit
+bashcompinit
+for file in ~/.local/share/bash-completion/completions/*
+do
+	source "$file"
+done
