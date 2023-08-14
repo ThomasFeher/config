@@ -26,3 +26,15 @@ systemctl --user start redshift-gtk
 
 extract latest `super-ttc-iosevka-…` font from https://github.com/be5invis/Iosevka/releases into `~/.fonts/`
 run `sudo fc-cache -fv`
+
+list of local configurations
+============================
+
+* ~/.gitconfig_individual
+* ~/.i3/autostart_local.sh
+* ~/.profile.local
+
+other changes to do on new OS installations
+===========================================
+
+* change number of cores in `MAKEFLAGS` to a sensible number (eg. `-j8`)
