@@ -17,7 +17,7 @@ install configuration files
 install software
 ================
 
-pacman -Syu alacritty bash-completion bat broot dmenu dunst fd fzf git i3-wm i3status pamac-gtk polkit-gnome powerline python-pip redshift ripgrep the_silver_searcher x11-ssh-askpass
+pacman -Syu alacritty bash-completion bat broot dmenu dunst fd fzf git i3-wm i3status lsof pamac-gtk polkit-gnome powerline python-pip redshift ripgrep the_silver_searcher x11-ssh-askpass
 
 systemctl --user enable redshift-gtk
 systemctl --user start redshift-gtk
