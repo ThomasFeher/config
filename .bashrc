@@ -25,6 +25,9 @@
 #export PILOTPORT=/dev/pilot
 #export PILOTRATE=115200
 
+# avoid duplicates in bash history
+export HISTCONTROL=ignoredups:erasedups
+
 test -s ~/.alias && . ~/.alias || true
 
 if $(command -v gvim > /dev/null)
