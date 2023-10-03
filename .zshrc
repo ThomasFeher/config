@@ -9,11 +9,6 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
-# fzf bash completion
-[ -f /usr/share/fzf/completions.zsh ] && source /usr/share/fzf/completions.zsh
-# fzf key bindings
-[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
-
 # allow <Esc #> to store the commented line in the history for later use
 setopt interactivecomments
 
@@ -27,6 +22,11 @@ bindkey "\e[5~" history-beginning-search-backward
 bindkey "\e[6~" history-beginning-search-forward
 # delete
 bindkey "^[[3~" delete-char                                     # Delete key
+
+# fzf key bindings
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+# fzf bash completion
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
 
 # include local bash completions
 autoload bashcompinit
