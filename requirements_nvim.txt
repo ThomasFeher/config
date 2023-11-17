@@ -1,0 +1,12 @@
+# packages necessary for development of python with neovim
+pynvim
+python-lsp-server
+ruff
+python-lsp-ruff
+python-lsp-black
+pycodestyle
+pydocstyle
+pyflakes
+mccabe
+flake8
+pylint
