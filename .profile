@@ -10,6 +10,11 @@ if [[ $keys != "0" ]]; then
 	ssh-add
 fi
 
+# avoid duplicates in bash history
+export HISTCONTROL=ignoredups:erasedups
+# do not limit the size of the bash history
+export HISTSIZE=-1
+
 # used by tools installed via pip and probably others
 export PATH="$PATH:$HOME/.local/bin"
 
