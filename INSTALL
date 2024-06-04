@@ -17,7 +17,7 @@ install configuration files
 install software
 ================
 
-pacman -Syu alacritty bash-completion bat broot dmenu dunst fd fzf git i3-wm i3status lsof pamac-gtk polkit-gnome powerline python-pip redshift ripgrep the_silver_searcher x11-ssh-askpass
+pacman -Syu alacritty bash-completion bat broot dmenu dunst fd fzf git i3-wm i3status lsof pamac-gtk polkit-gnome powerline python-pip python-pipx redshift ripgrep the_silver_searcher x11-ssh-askpass
 
 systemctl --user enable redshift-gtk
 systemctl --user start redshift-gtk
@@ -26,6 +26,8 @@ systemctl --user start redshift-gtk
 
 extract latest `super-ttc-iosevka-…` font from https://github.com/be5invis/Iosevka/releases into `~/.fonts/`
 run `sudo fc-cache -fv`
+
+pipx install --include-deps miss-hit
 
 list of local configurations
 ============================
