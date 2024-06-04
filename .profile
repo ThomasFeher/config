@@ -37,7 +37,8 @@ export MANPAGER='nvim +Man!'
 export MANWIDTH=999
 
 if [ "$XDG_CURRENT_DESKTOP" = "i3" ]; then
-export QT_QPA_PLATFORMTHEME="qt5ct"
+	export QT_QPA_PLATFORMTHEME="qt5ct"
+	alias dolphin="XDG_CURRENT_DESKTOP=kde /usr/bin/dolphin"
 fi
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
