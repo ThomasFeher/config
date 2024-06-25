@@ -28,6 +28,11 @@ bindkey "^[[3~" delete-char                                     # Delete key
 # fzf bash completion
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
 
+if [ "$XDG_CURRENT_DESKTOP" = "i3" ]; then
+	# note: alias seems to not work with dmenu
+	alias dolphin="XDG_CURRENT_DESKTOP=kde /usr/bin/dolphin"
+fi
+
 # include local bash completions
 autoload bashcompinit
 bashcompinit

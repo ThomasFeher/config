@@ -38,7 +38,7 @@ export MANWIDTH=999
 
 if [ "$XDG_CURRENT_DESKTOP" = "i3" ]; then
 	export QT_QPA_PLATFORMTHEME="qt5ct"
-	alias dolphin="XDG_CURRENT_DESKTOP=kde /usr/bin/dolphin"
+	export XDG_MENU_PREFIX=plasma-
 fi
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc

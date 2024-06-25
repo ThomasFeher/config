@@ -15,4 +15,4 @@ pamac-tray &
 thunderbird &
 firefox &
 alacritty -e tmux &
-dolphin &
+XDG_CURRENT_DESKTOP=kde dolphin &
