@@ -66,3 +66,7 @@ alias ll='ls -l'
 [ -f /usr/share/bash-completion/completions/fzf ] && source /usr/share/bash-completion/completions/fzf
 # fzf key bindings
 [ -f /usr/share/bash-completion/completions/fzf-key-bindings ] && source /usr/share/bash-completion/completions/fzf-key-bindings
+
+# time warrior aliases
+alias tws='timew summary :ids :annotations'
+alias twlog='timew tasklog :day'

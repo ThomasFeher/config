@@ -9,6 +9,10 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+# time warrior aliases
+alias tws='timew summary :ids :annotations'
+alias twlog='timew tasklog :day'
+
 # allow <Esc #> to store the commented line in the history for later use
 setopt interactivecomments
 
