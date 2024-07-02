@@ -63,9 +63,9 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 
 # fzf bash completion
-[ -f /usr/share/bash-completion/completions/fzf ] && source /usr/share/bash-completion/completions/fzf
+[ -f /usr/share/fzf/completion.bash ] && source /usr/share/fzf/completion.bash
 # fzf key bindings
-[ -f /usr/share/bash-completion/completions/fzf-key-bindings ] && source /usr/share/bash-completion/completions/fzf-key-bindings
+[ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
 
 # time warrior aliases
 alias tws='timew summary :ids :annotations'
