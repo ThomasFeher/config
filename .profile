@@ -41,4 +41,14 @@ if [ "$XDG_CURRENT_DESKTOP" = "i3" ]; then
 	export XDG_MENU_PREFIX=plasma-
 fi
 
+# if [ -z "$SSH_CLIENT" ] && [ -z "$SSH_CONNECTION" ] && [ -z "$SSH_TTY" ]; then
+# 	neo_dir=$HOME/neo/
+# 	if [[ -e $neo_dir ]]
+# 	then
+# 		export PATH=$PATH:$neo_dir
+# 		boneg # for normal german keyboards
+# 		# bone # for truely ergonomic and ergodox
+# 	fi
+# fi
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
