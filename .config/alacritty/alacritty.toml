@@ -1,3 +1,4 @@
+[general]
 live_config_reload = true
 
 [colors.bright]
@@ -52,5 +53,5 @@ mods = "Control"
 history = 10000
 multiplier = 3
 
-[shell]
+[terminal.shell]
 program = "/usr/bin/zsh"
