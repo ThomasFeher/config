@@ -35,7 +35,7 @@ fi
 alias lock='i3lock --color=000000'
 
 #enable "powerline" prompt
-powerline_file=/usr/share/powerline/bash/powerline.sh
+powerline_file=/usr/share/powerline/bindings/bash/powerline.sh
 if [[ -e $powerline_file ]]
 then
 	. $powerline_file
@@ -63,6 +63,10 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 
 # fzf bash completion
-[ -f /usr/share/bash-completion/completions/fzf ] && source /usr/share/bash-completion/completions/fzf
+[ -f /usr/share/fzf/completion.bash ] && source /usr/share/fzf/completion.bash
 # fzf key bindings
-[ -f /usr/share/bash-completion/completions/fzf-key-bindings ] && source /usr/share/bash-completion/completions/fzf-key-bindings
+[ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
+
+# time warrior aliases
+alias tws='timew summary :ids :annotations'
+alias twlog='timew tasklog :day'

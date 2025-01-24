@@ -8,6 +8,7 @@
 .avidemux/
 .bash_history
 .cache/
+.cargo/
 .cddb/
 .config/Dogecoin/
 .config/Trolltech.conf
@@ -57,6 +58,7 @@
 .i3/autostart_local.sh
 .isomaster
 .java/
+.julia/
 .kde4/
 .lesshst
 .local/
@@ -76,6 +78,7 @@
 .skel/
 .ssh/
 .subversion/
+.texlive/
 .thumbnails/
 .thunderbird/
 .vim/
@@ -185,6 +188,7 @@ uzbl/
 .viminfo.tmp
 .wavesurfer/
 .weechat/script/
+.zsh/
 Arbeitsfläche/
 Dokumente/
 Sync/
@@ -200,5 +204,7 @@ src/
 tasks.tsk*
 tmp/
 vbox_share/
+vimwiki/
+vimwiki_vic/
 work.ics
 workspace/

@@ -9,3 +9,6 @@ colorscheme dark
 " If this is done while the Neovim frame is not focused, then Firefox is closed
 " and the buffer content is lost.
 unbind ZZ
+" I'm not using `/` at all, so it is removed here and Github search behaves as
+" normal
+set leavegithubalone true
