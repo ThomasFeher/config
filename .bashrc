@@ -65,6 +65,10 @@ fi
 alias ls='ls --color=auto'
 alias ll='ls -l'
 
+if [ "$XDG_CURRENT_DESKTOP" = "i3" ]; then
+	alias dolphin="XDG_CURRENT_DESKTOP=kde /usr/bin/dolphin"
+fi
+
 # fzf bash completion
 [ -f /usr/share/fzf/completion.bash ] && source /usr/share/fzf/completion.bash
 # fzf key bindings
