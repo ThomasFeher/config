@@ -38,6 +38,9 @@ alias lock='i3lock --color=000000'
 powerline_file=/usr/share/powerline/bindings/bash/powerline.sh
 if [[ -e $powerline_file ]]
 then
+	powerline-daemon -q
+	POWERLINE_BASH_CONTINUATION=1
+	POWERLINE_BASH_SELECT=1
 	. $powerline_file
 fi
 
