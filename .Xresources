@@ -164,3 +164,4 @@ URxvt.keysym.KP_9:      9
 URxvt.keysym.KP_0:      0
 !URxvt.keysym.End:       \033[4~
 !URxvt.keysym.Home:      \033[1~
+!Xft.dpi: 150 ! for high DPI monitors
