@@ -66,7 +66,7 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 
 if [ "$XDG_CURRENT_DESKTOP" = "i3" ]; then
-	alias dolphin="XDG_CURRENT_DESKTOP=kde /usr/bin/dolphin"
+	alias dolphin="XDG_CURRENT_DESKTOP=kde QT_SCALE_FACTOR=2 /usr/bin/dolphin"
 fi
 
 # fzf bash completion
