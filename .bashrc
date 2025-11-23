@@ -77,3 +77,10 @@ fi
 # time warrior aliases
 alias tws='timew summary :ids :annotations'
 alias twlog='timew tasklog :day'
+
+# enables `z` command to change directory and add new directories
+# see `man zoxide`
+if command -v zoxide >/dev/null 2>&1
+then
+	eval "$(zoxide init bash)"
+fi
