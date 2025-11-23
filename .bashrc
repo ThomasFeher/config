@@ -84,3 +84,14 @@ if command -v zoxide >/dev/null 2>&1
 then
 	eval "$(zoxide init bash)"
 fi
+
+# start yazi using `y`
+# this will change directory to the current directory in yazi when exiting yazi using `q`
+# use `Q` to quit without changing the directory
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}

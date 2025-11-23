@@ -17,7 +17,7 @@ install configuration files
 install software
 ================
 
-pamac install alacritty bash-completion bat broot dmenu dunst fd fzf git i3-wm i3status lsof pamac-gtk polkit-gnome powerline python-pip python-pipx redshift ripgrep the_silver_searcher x11-ssh-askpass yaml-language-server zoxide
+pamac install alacritty bash-completion bat broot dmenu dunst fd fzf git i3-wm i3status lsof pamac-gtk polkit-gnome powerline python-pip python-pipx redshift ripgrep the_silver_searcher x11-ssh-askpass yaml-language-server yazi zoxide
 
 systemctl --user enable redshift-gtk
 systemctl --user start redshift-gtk
