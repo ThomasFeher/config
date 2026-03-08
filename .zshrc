@@ -9,6 +9,11 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+# Source CachyOS configuration
+if [[ -e /usr/share/cachyos-zsh-config/cachyos-config.zsh ]]; then
+  source /usr/share/cachyos-zsh-config/cachyos-config.zsh
+fi
+
 # time warrior aliases
 alias tws='timew summary :ids :annotations'
 alias twlog='timew tasklog :day'
