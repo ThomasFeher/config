@@ -14,6 +14,9 @@ if [[ -e /usr/share/cachyos-zsh-config/cachyos-config.zsh ]]; then
   source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 fi
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 # time warrior aliases
 alias tws='timew summary :ids :annotations'
 alias twlog='timew tasklog :day'
