@@ -13,7 +13,6 @@
 .config/Dogecoin/
 .config/Trolltech.conf
 .config/akonadi/
-.config/autostart/
 .config/chromium/
 .config/dunst/test
 .config/dunst/testDir/

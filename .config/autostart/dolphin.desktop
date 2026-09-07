@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Dolphin
+Exec=dolphin
+X-GNOME-Autostart-enabled=true
