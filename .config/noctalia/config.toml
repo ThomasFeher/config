@@ -2,7 +2,7 @@
 ui_scale = 1.20
 
 [bar.default]
-center = [ "workspaces", "spacer_1", "active_window" ]
+center = [ "taskbar", "spacer_1", "active_window" ]
 concave_edge_corners = true
 end = [ "media", "spacer_1", "tray", "notifications", "network", "volume", "session" ]
 margin_edge = 0
@@ -112,6 +112,10 @@ color = "error"
 [widget.spacer_1]
 type = "spacer"
 
+[widget.taskbar]
+show_title = true
+title_width = 150
+
 [widget.temp]
 show_value = false
 
@@ -132,11 +136,3 @@ capsule_fill = "on_secondary"
 
 [widget.volume]
 color = "secondary"
-
-[widget.workspaces]
-active_pill_size = 2.5
-capsule = true
-capsule_fill = "on_primary"
-inactive_pill_size = 1.0
-pill_scale = 0.80
-show_labels = false
