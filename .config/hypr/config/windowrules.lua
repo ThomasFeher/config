@@ -46,7 +46,7 @@ hl.window_rule({
 })
 
 -- Apps
-hl.window_rule({ match = { class = "^(thunderbird)$" }, workspace = 1 })
+hl.window_rule({ match = { class = "^(.*Thunderbird)$" }, workspace = 1 })
 hl.window_rule({ match = { class = "^(firefox)$" }, workspace = 2 })
 hl.window_rule({ match = { class = "^(org\\.kde\\.dolphin)$" }, workspace = 5 })
 hl.window_rule({ match = { class = "^(.*\\.exe)$", float = true }, monitor = PRIMARY_MONITOR, center = true, fullscreen_state = 0 })
