@@ -75,11 +75,11 @@ hl.bind(mainMod .. " + Return",     hl.dsp.exec_cmd(launchPrefix .. TERMINAL))
 hl.bind("XF86Calculator",           hl.dsp.exec_cmd(launchPrefix .. CALCULATOR))
 hl.bind(mainMod .. " + W",          hl.dsp.exec_cmd(launchPrefix .. BROWSER))
 hl.bind("CONTROL + SHIFT + Escape", hl.dsp.exec_cmd(launchPrefix .. TERMINAL .. " -e btop"))
-hl.bind(mainMod .. " + Z",          hl.dsp.exec_cmd(noctCall .. "settings-toggle"))
+hl.bind(mainMod .. " + SHIFT + Z",   hl.dsp.exec_cmd(noctCall .. "settings-toggle"))
 hl.bind(mainMod .. " + X",          hl.dsp.exec_cmd(noctCall .. "panel-toggle control-center"))
 hl.bind(mainMod .. " + Space",      hl.dsp.exec_cmd(noctCall .. "panel-toggle launcher"))
-hl.bind(mainMod .. " + period",     hl.dsp.exec_cmd(noctCall .. "panel-toggle launcher /emo"))
-hl.bind(mainMod .. " + L",          hl.dsp.exec_cmd(noctCall .. "session lock"))
+hl.bind(mainMod .. " + SHIFT + period", hl.dsp.exec_cmd(noctCall .. "panel-toggle launcher /emo"))
+hl.bind(mainMod .. " + SHIFT + L",   hl.dsp.exec_cmd(noctCall .. "session lock"))
 hl.bind(mainMod .. " + ALT + C",    hl.dsp.exec_cmd(noctCall .. "panel-toggle session"))
 
 ---------------------------
@@ -135,6 +135,11 @@ for i = 1, NUM_WPM do
     local key = i % 10
     hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
 end
+-- 9-key numpad-style cluster (z , . n r s h l m -> 1..9), alongside the digit row
+local wsCluster = { "z", "comma", "period", "n", "r", "s", "h", "l", "m" }
+for i, key in ipairs(wsCluster) do
+    hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
+end
 -- Relative
 for i = 1, NUM_WPM do
     local key = i % 10
@@ -154,7 +159,7 @@ hl.bind(mainMod .. " + CONTROL + mouse_down", hl.dsp.focus({ workspace = "m+1" }
 
 -- Special workspace (scratchpad)
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special" }))
-hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special())
+hl.bind(mainMod .. " + CONTROL + S", hl.dsp.workspace.toggle_special())
 
 -- Modal interface
 -- hl.bind(mainMod .. "+ c", hl.dsp.focus({ workspace = 1 }))
@@ -172,7 +177,7 @@ hl.bind(mainMod .. " + e",  hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + i",  hl.dsp.focus({ direction = "down" }))
 hl.bind(mainMod .. " + u",  hl.dsp.focus({ direction = "up" }))
 
-hl.bind(mainMod .. " + m", hl.dsp.submap("move"))
+hl.bind(mainMod .. " + SHIFT + m", hl.dsp.submap("move"))
 hl.define_submap("move", function()
 	-- hl.bind(mainMod .. "+ c", hl.dsp.window.move({ workspace = "1" }))
 	-- hl.bind(mainMod .. "+ t", hl.dsp.window.move({ workspace = "2" }))
@@ -188,6 +193,10 @@ hl.define_submap("move", function()
 	hl.bind(" + e",  hl.dsp.window.move({ direction = "right" }))
 	hl.bind(" + i",  hl.dsp.window.move({ direction = "down" }))
 	hl.bind(" + u",  hl.dsp.window.move({ direction = "up" }))
+	-- 9-key cluster: move window to workspace 1-9 (absolute)
+	for i, key in ipairs(wsCluster) do
+		hl.bind(key, hl.dsp.window.move({ workspace = i }))
+	end
 	for i = 1, NUM_WPM do
 		local key = i % 10
 		hl.bind(key, hl.dsp.window.move({ workspace = "m~" .. i }))
