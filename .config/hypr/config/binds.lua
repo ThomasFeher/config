@@ -157,7 +157,6 @@ hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special" })
 hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special())
 
 -- Modal interface
-hl.bind("SUPER + f", hl.dsp.submap("NORMAL"))
 -- hl.bind(mainMod .. "+ c", hl.dsp.focus({ workspace = 1 }))
 -- hl.bind(mainMod .. "+ t", hl.dsp.focus({ workspace = 2 }))
 -- hl.bind(mainMod .. "+ i", hl.dsp.focus({ workspace = 3 }))
