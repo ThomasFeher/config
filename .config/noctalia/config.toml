@@ -1,8 +1,11 @@
+[plugins]
+enabled = [ "k4n4t4/hypr-submap" ]
+
 [accessibility]
 ui_scale = 1.20
 
 [bar.default]
-center = [ "taskbar", "spacer_1", "active_window" ]
+center = [ "taskbar", "spacer_1", "active_window", "hypr-submap" ]
 concave_edge_corners = true
 end = [ "media", "spacer_1", "tray", "notifications", "network", "volume", "session" ]
 margin_edge = 0
@@ -92,6 +95,16 @@ community_palette = "Solarized"
 [widget.clock]
 color = "secondary"
 format = "{:%H:%M %A %m/%d/%y}"
+
+[widget.hypr-submap]
+type              = "k4n4t4/hypr-submap:hypr-submap"
+hide_when_default = true
+prefix            = ""
+glyph             = "keyboard"
+capsule           = true
+capsule_fill      = "#ff7a00"
+capsule_opacity   = 1.0
+color             = "#1a1a1a"
 
 [widget.launcher]
 color = "secondary"

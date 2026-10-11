@@ -177,6 +177,23 @@ hl.bind(mainMod .. " + e",  hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + i",  hl.dsp.focus({ direction = "down" }))
 hl.bind(mainMod .. " + u",  hl.dsp.focus({ direction = "up" }))
 
+-----------------------------------------
+---- MOVE MODE: submap + orange border ----
+-----------------------------------------
+
+-- Orange active border while in the move submap; restored on every exit path
+-- (keybinds, widget click, or hyprctl reset) via the submap-change event.
+local moveModeBorder   = { colors = { "rgba(ffa53dff)", "rgba(ff7a00ff)" }, angle = 45 }
+local normalModeBorder = { colors = { CACHYLGREEN, CACHYDGREEN }, angle = 45 }
+
+hl.on("keybinds.submap", function(name)
+	if name == "move" then
+		hl.config({ general = { col = { active_border = moveModeBorder } } })
+	else
+		hl.config({ general = { col = { active_border = normalModeBorder } } })
+	end
+end)
+
 hl.bind(mainMod .. " + SHIFT + m", hl.dsp.submap("move"))
 hl.define_submap("move", function()
 	-- hl.bind(mainMod .. "+ c", hl.dsp.window.move({ workspace = "1" }))
